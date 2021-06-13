@@ -4,7 +4,7 @@
 $name = "Methela,Insana Marium";
 for ($i=0;$i<=10;$i++)
  {
-  echo "Print my name: $name ";
+  echo "My Name is: ".$name."<br/>";
 }
 ?>
 
