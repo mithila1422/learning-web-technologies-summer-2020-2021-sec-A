@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Data</title>
+</head>
+<body>
+	<form method="POST" action="#">
+		 Blood Group <select name ="bg">
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">A+</option> 
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">A-</option> 
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">B+</option> 
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">B-</option> 
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">AB+</option>
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">AB-</option> 
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">O+</option> 
+           <option value="<?php if(isset($_POST['bg'])){ echo $_POST['bg']; }?>">O-</option>  
+ 			</select>
+			 <br>
+				<input type="submit" name="submit" value="Submit">
+		
+	</form>
+</body>
+</html>
