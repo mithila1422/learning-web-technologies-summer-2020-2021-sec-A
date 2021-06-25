@@ -1,19 +1,23 @@
-<information>
-	<body>
-<tr1>
-<th1><SL.NO.><b>23</b></SL.NO.></th1>
-<tr2><NAME>John Carter</NAME></tr2>
-<ADMISSION_DATE>25/12/2015</ADMISSION_DATE><n>
-</tr1>
-<tr2>
-<tr3><SL.NO.><b>29</b></SL.NO.><th3>
-<NAME>Bob Marshal</NAME>
-<ADMISSION_DATE>13/01/1999</ADMISSION_DATE>
-</tr2>
-<tr3>
-<SL.NO.><b>35</b></SL.NO.>
-<NAME><b>Clark Kent</b></NAME>
-<ADMISSION_DATE>17/06/2005<b></b></ADMISSION_DATE>
-</tr3>
-</body>
-</information>
+<students>
+	<student>
+		<sl_no>SL.NO.</sl_no>
+		<name>NAME</name>
+		<admi_date>ADMISSION DATE</admi_date>
+	</student>
+
+	<student>
+		<sl_no>23</sl_no>
+		<name>John Carter</name>
+		<admi_date>25/12/2015</admi_date>
+	</student>
+		<student>
+		<sl_no>29</sl_no>
+		<name>Bob Marshal</name>
+		<admi_date>13/01/1999</admi_date>
+	</student>
+		<student>
+		<sl_no>35</sl_no>
+		<name>Clark Kent</name>
+		<admi_date>17/06/2005</admi_date>
+	</student>
+</students>

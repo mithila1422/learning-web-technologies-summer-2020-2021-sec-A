@@ -1,0 +1,29 @@
+<details>
+	<customer>
+		<id>ID</id>
+		<name>NAME</name>
+		<add>ADDRESS</add>
+		<dept>DEPARTMENT</dept>
+		<salary>SALARY</salary>
+	</customer>
+	<customer>
+		<id>1</id>
+		<name>John Doe</name>
+		<add>H#38,R#3,Banani,Dhaka</add>
+		<dept>Sales</dept>
+		<salary>$20000</salary>
+	</customer>
+	<customer>
+		<id>2</id>
+		<name>Mark Zuckerberg</name>
+		<add>Flat#A\1,H#20,R#18,Mirpur,Dhaka</add>
+		<dept>Accounts</dept>
+		<salary>$12000</salary>
+	</customer>
+	<customer>
+		<id>3</id>
+		<name>Ala Voski</name>
+		<add>H#38,R#3,Motijheel</add>
+		<dept>Human Resource</dept>
+		<salary>$30000</salary>
+	</customer>
