@@ -1,11 +1,16 @@
-<?php
-	
-	for ($i=9; $i<=99; $i+=2)
-	
-		{
-  	  
-			echo "The odd number ".$i." <br/>";
-	   
-		} 
- 
-?>
+<?php  
+
+    for($i=10;$i<100;$i++)  
+        {  
+           if($i%2) 
+           {
+            echo"$i is odd number<br>";
+           } 
+           else
+           {
+             
+           }
+        } 
+
+          
+?>  

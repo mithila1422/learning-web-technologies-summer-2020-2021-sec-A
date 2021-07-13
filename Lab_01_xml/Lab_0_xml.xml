@@ -1,37 +1,5 @@
-<<<<<<< HEAD
+
 <?xml version="1.0"?>
-<products>
-<product>
-	
-	<id>ID </id>
-	<name> NAME </name>
-	<ur> UNIT PRICE </ur>
-	<stock> STOCK </stock>
-	<status> STATUS </status>
-</product>
-<product>
-	<id>11</id>
-	<name>Samsung</name>
-	<ur>35000</ur>
-	<stock>50</stock>
-	<status>1</status>
-</product>
-<product>
-	<id>20</id>
-	<name>HTC</name>
-	<ur>65300</ur>
-	<stock>35</stock>
-	<status>0</status>
-</product>
-<product>
-	<id>23</id>
-	<name>Nokia</name>
-	<ur>25100</ur>
-	<stock>100</stock>
-	<status>1</status>
-</product>
-</products>
-=======
 <products>
 <product>
 <id>ID </id>
@@ -62,4 +30,3 @@
 <status>1</status>
 </product>
 </products>
->>>>>>> 9998b349b71a59105898421b1402a5325815c50d

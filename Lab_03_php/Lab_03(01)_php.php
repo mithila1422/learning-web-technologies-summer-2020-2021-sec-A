@@ -1,9 +1,13 @@
-<?php  
- $length = 22;  
- $width = 20; 
- $Rectangle = $length *$width;
- $perimeter = 2 * ($length + $width);
+<?php
+$length=100;
+$width=10;
+$rectangle=$length*$width;
+$perimeter=2*($length+$width);
+echo "Rectangle=(length*width)<br>";
+echo "Rectangle=($length*$width)<br>";
+echo "Rectangle= $rectangle<br>";
 
- echo "Area of rectangle is= $Rectangle <br /> ";  
- echo "Area of perimeter is=$perimeter <br /> ";
-?> 
+echo "Perimeter=2*(length+width)<br>";
+echo "Perimeter=2*($length+$width)<br>";
+echo "Perimeter= $perimeter";
+?>
