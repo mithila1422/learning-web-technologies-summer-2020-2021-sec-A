@@ -1,0 +1,45 @@
+<html>
+<head>
+     <title>DOB</title>
+</head>
+<body>
+      <script >
+          function GetDOB(){
+               
+           if (document.getElementById("dd").value == "" || document.getElementById("mm").value == "" || document.getElementById("yyyy").value == "") {
+                    document.getElementById("Massage").innerHTML="**Cannot be empty"
+            return false;
+    }
+      if (document.getElementById("dd").value <= 0 || document.getElementById("dd").value > 31) {
+            document.getElementById("Massage").innerHTML="**dd:0-31"
+            return false;
+        }
+         if (document.getElementById("mm").value <= 0 || document.getElementById("mm").value > 12) {
+          document.getElementById("Massage").innerHTML="**mm:1-12"
+            return false;
+        } 
+        if (document.getElementById("yyyy").value < 1900 || document.getElementById("yyyy").value > 2016) {
+          document.getElementById("Massage").innerHTML="**yyyy:1900-2016"
+            return false;
+        }
+    }
+
+</script>
+               
+     <fieldset>
+          <legend><h1>Date of Birth</h1></legend>
+          <h2>dd mm yyyy</h2>
+          <form onsubmit="return GetDOB()">
+          <input type="number" name="dd" id="dd" value="">
+          / <input type="number" name="mm" id="mm" value="" >
+          / <input type="number" name="yyyy" id="yyyy" value="" ><br>
+           <span id="Massage"></span>
+           <input type="submit" value="Submit">
+
+
+     </form >
+
+     </fieldset>
+
+</body>
+</html>

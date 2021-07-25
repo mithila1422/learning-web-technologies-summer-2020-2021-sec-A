@@ -1,0 +1,48 @@
+<html>
+<head>
+     <title>Name</title>
+</head>
+<body>
+     <script >
+          function GetName(){
+               
+              let name=document.getElementById("name").value;
+
+               if(name==""){
+                    document.getElementById("Massage").innerHTML="**Cannot be empty"
+            return false;
+               }
+
+               if(name.length<2){
+                   document.getElementById("Massage").innerHTML="**Name at least two words"
+            return false; 
+               }
+
+               if (name.match(/^[A-Za-z"."-]+$/)) {
+                    return true;
+               }
+               else{
+                    document.getElementById("Massage").innerHTML="**Can contain a-zor A-Zor dot(.) or dash(-)"
+                    return false; 
+               }
+
+               
+               if (name.match(/^[A-Za-z]+$/)){
+                    return true;
+               }
+               else{
+                    document.getElementById("Massage").innerHTML="**Name must start with a letter"
+                    return false;
+               }
+          }
+
+     </script>
+     <form onsubmit="return GetName()">
+          Name:<br>
+           <input type="text" name="Name" id="name"value="">
+           <span id="Massage"></span>
+           <br>
+           <input type="submit"  value="Submit">
+     </form1>
+</body>
+</html>

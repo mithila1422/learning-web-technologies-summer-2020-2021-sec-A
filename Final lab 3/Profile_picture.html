@@ -1,0 +1,44 @@
+<html>
+<head>
+     <title>Profile picture</title>
+</head>
+<body>
+     <script>
+          function GetPp() {
+               let ui=document.getElementById("ui").value;
+
+               if(ui==""){
+                    document.getElementById("Massage").innerHTML="**Cannot be empty"
+            return false;
+               }
+               else{
+               if (ui <= 0) {
+                     document.getElementById("Massage").innerHTML="**UserIdcannot be empty and has tobe a positive number"
+                return false;}
+           }
+     let p=document.getElementById("p").value;
+                if(p==""){
+                    document.getElementById("Massages").innerHTML="**Picture cannot be empty"
+            return false;
+               }else{return false;}
+            
+        }
+     </script>
+
+     <fieldset>
+          <legend>Profile Picture</legend>
+           <form onsubmit="return GetPp()">
+          User Id<br>
+          <input type="text" name="ui" id="ui" value="">
+          <span id="Massage"></span><br><br>
+
+          Photo <br>
+          <input type="button" name="btn" value="Browse..." id="p" ><input type="textbox" name="btn" value=""placeholder="No file selected">
+          <span id="Massages"></span>
+
+     </fieldset>
+     
+           <input type="submit" value="Submit">
+     </form>
+</body>
+</html>

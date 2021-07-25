@@ -1,0 +1,29 @@
+<html>
+<head>
+     <title>Gender</title>
+</head>
+<body>
+     <script>
+          function GetGender() {
+        if (document.getElementById("m").checked || document.getElementById("f").checked || document.getElementById("o").checked) {
+            return true;
+        } else {
+           document.getElementById("Massage").innerHTML="**At least one of them has to be selected"
+            return false;
+        }
+    }
+     </script>
+
+     <fieldset>
+          <legend>Gender</legend>
+           <form onsubmit="return GetGender()">
+          <input type="radio" name="Gender"value="" id="m">Male
+          <input type="radio" name="Gender" value="" id="f">Female
+          <input type="radio" name="Gender" value="" id="o">Other
+          <span id="Massage"></span>
+     </fieldset>
+     
+           <input type="submit" value="Submit">
+     </form>
+</body>
+</html>

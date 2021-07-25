@@ -1,0 +1,27 @@
+<html>
+<head>
+     <title>Degree</title>
+</head>
+<body>
+       <script>
+          function GetDegree() {
+        if (document.getElementById("s").checked || document.getElementById("h").checked || document.getElementById("b").checked) {
+            return true;
+        } else {
+           document.getElementById("Massage").innerHTML="**At least one of them has to be selected"
+            return false;
+        }
+    }</script>
+     <fieldset>
+          <legend>Degree</legend>
+          <form onsubmit="return GetDegree()">
+          <input type="checkbox" name="Degree" id="s" value="">SSC
+          <input type="checkbox" name="Degree" id="h" value="">HSC
+          <input type="checkbox" name="Degree" id="b" value="">BSc
+          <span id="Massage"></span>
+     </fieldset>
+     
+           <input type="submit"  value="Submit">
+     </form>
+</body>
+</html>

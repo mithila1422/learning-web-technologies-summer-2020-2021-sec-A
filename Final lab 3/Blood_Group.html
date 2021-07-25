@@ -1,0 +1,33 @@
+<html>
+<head>
+     <title>BG</title>
+</head>
+<body>
+       <script>
+          function GetBG() {
+        if (document.getElementById("bg").checked ) {
+            return true;
+        } else {
+           document.getElementById("Massage").innerHTML="**Must be selected7"
+            return false;
+        }
+    }</script>
+     
+          <form onsubmit="return GetBG()">
+             Blood Group <span id="Massage"></span><select name ="bg" id="bg">
+           <option value="">A+</option> 
+           <option value="">A-</option> 
+           <option value="">B+</option> 
+           <option value="">B-</option> 
+           <option value="">AB+</option>
+           <option value="">AB-</option> 
+           <option value="">O+</option> 
+           <option value="">O-</option>  
+      </select>
+          
+     </fieldset>
+     
+           <input type="submit"  value="Submit">
+     </form>
+</body>
+</html>
