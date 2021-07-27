@@ -1,0 +1,165 @@
+<html>
+<head>
+     <title>ASSESSMENT TASK</title>
+</head>
+<body>
+   
+
+    
+    <form onsubmit="return validation()">
+     <table border="1" cellspacing="0">
+               <tr align="center">
+          <th colspan="2">PERSON PROFILE</th>
+     </tr>
+
+      <tr>
+          <td>Name</n> </td>
+          <td><input type="text" name="Name" id="name" value=""size=90></d>
+     </tr>
+     <span id="namee"></span>
+      <tr>
+          <td>Email </td>
+          <td><input type="text" name="Email" id="email" value=""size=90></td>
+     </tr>
+     <span id="emaill"></span>
+           <tr>
+          <td>Gender </td>
+          <td> <input type="radio" name="Gender"value="" id="m">Male
+          <input type="radio" name="Gender" value="" id="f">Female
+          <input type="radio" name="Gender" value="" id="o">Other
+          
+     </td>
+     </tr>
+     <span id="gen"></span>
+           <tr>
+          <td>Date of Birth </td>
+          <td> <input type="number" name="dd" id="dd" value="">
+          / <input type="number" name="mm" id="mm" value="" >
+          / <input type="number" name="yyyy" id="yyyy" value="" >
+            (dd/mm/yyyy)</td>
+     </tr>
+     <span id="dob"></span>
+      <tr>
+          <td>Blood Group </td>
+          <td><select name ="bg" id="bg">
+           <option value="">A+</option> 
+           <option value="">A-</option> 
+           <option value="">B+</option> 
+           <option value="">B-</option> 
+           <option value="">AB+</option>
+           <option value="">AB-</option> 
+           <option value="">O+</option> 
+           <option value="">O-</option>  
+      </select></td>
+     </tr>
+     <span id="blg"></span>
+           <tr>
+          <td>Degree </td>
+          <td><input type="checkbox" name="Degree" id="s" value="">SSC
+          <input type="checkbox" name="Degree" id="h" value="">HSC
+          <input type="checkbox" name="Degree" id="b" value="">BSc</td>
+     </tr>
+     <span id="degree"></span>
+           <tr>
+          <td>Photo </td>
+          <td><input type="button" name="btn" value="Browse..." id="p"><input type="textbox" name="btn" value=""placeholder="No file selected"></td>
+     </tr>
+     <span id="pp"></span>
+          <tr>
+          <td colspan="2"><br> </td>  
+     </tr> 
+
+     <tr>
+          <td colspan="2" align="right">
+         
+           <input type="submit" value="Submit">
+           <input type="reset"  value="Reset">
+    
+     </td>
+     </tr>
+     </table>
+      </form>
+      <script >
+          function validation(){
+
+               //name
+              let name=document.getElementById("name").value;
+
+               if(name==""){
+                document.getElementById("namee").innerHTML="**Name cannot be empty";
+                    
+            return false;
+               }
+                 if(name.length<2){
+                   document.getElementById("namee").innerHTML="**Name at least two words"
+            return false; 
+               }
+
+             
+               //email
+               let email=document.getElementById("email").value;
+               if(email==""){
+                document.getElementById("emaill").innerHTML="**Email cannot be empty";
+                    
+            return false;
+               }
+               //gender
+              if (document.getElementById("m").checked || document.getElementById("f").checked || document.getElementById("o").checked) {
+            return true;
+        } else {
+           document.getElementById("gen").innerHTML="**At least one of them has to be selected"
+            return false;
+        }
+        //dob
+        if (document.getElementById("dd").value == "" || document.getElementById("mm").value == "" || document.getElementById("yyyy").value == "") {
+                    document.getElementById("dob").innerHTML="**Date of birth cannot be empty"
+            return false;
+    }
+      if (document.getElementById("dd").value <= 0 || document.getElementById("dd").value > 31) {
+            document.getElementById("dob").innerHTML="**dd:0-31"
+            return false;
+        }
+         if (document.getElementById("mm").value <= 0 || document.getElementById("mm").value > 12) {
+          document.getElementById("dob").innerHTML="**mm:1-12"
+            return false;
+        } 
+        if (document.getElementById("yyyy").value < 1900 || document.getElementById("yyyy").value > 2016) {
+          document.getElementById("dob").innerHTML="**yyyy:1900-2016"
+            return false;
+        }
+        //bg
+        if (document.getElementById("bg").checked ) {
+            return true;
+        } else {
+           document.getElementById("blg").innerHTML="**Must be selected"
+            return false;
+        }
+        //degree
+        if (document.getElementById("s").checked || document.getElementById("h").checked || document.getElementById("b").checked) {
+            return true;
+        } else {
+           document.getElementById("degree").innerHTML="**At least one of them has to be selected"
+            return false;
+        }
+          //pp
+           let ui=document.getElementById("ui").value;
+
+               if(ui==""){
+                    document.getElementById("pp").innerHTML="**Cannot be empty"
+            return false;
+               }
+               else{
+               if (ui <= 0) {
+                     document.getElementById("pp").innerHTML="**UserIdcannot be empty and has tobe a positive number"
+                return false;}
+           }
+     let p=document.getElementById("p").value;
+                if(p==""){
+                    document.getElementById("pp").innerHTML="**Picture cannot be empty"
+            return false;
+               }else{return false;}     
+          }
+      </script>
+
+</body>
+</html>
