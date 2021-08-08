@@ -1,11 +1,5 @@
 <?php
-	 $companyErr = $jobTitleErr = $jobLocErr = $salErr = "" ;
-
-      $company = "";
-      $jobTitle = "";
-      $jobLoc = "";
-      $sal = "";
-  
+	 
       
       include "../control/jobsignupCheck.php"; 
 
@@ -48,21 +42,7 @@
 					<td><input type="text" name="sal" id="sal"></td>
 					<td><?php echo $salErr; ?></td>
 				</tr>
-				<tr>
-					<td>Password</td>
-					<td><input type="password" name="password" id="password"></td>
-					<td></td>
-				</tr>
-	
-				<tr>
-					<td>Type</td>
-					<td>
-						<select name="type" >
-							<option value="a">Admin</option>
-							<option value="e">Employee</option>
-						</select>
-					</td>
-					<td></td>
+				
 				</tr>
 				<tr>
 					<td></td>

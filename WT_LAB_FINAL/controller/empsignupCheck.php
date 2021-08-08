@@ -3,14 +3,14 @@
 
 	if(isset($_POST['submit'])){
 
-		$ameErr =$companyErr = $cnErr = $unameErr = $passwordErr = "" ;
+		$nameErr =$companyErr = $cnErr = $unameErr = $passwordErr = "" ;
 
-		$name= $_POST['name'];
-		$cn= $_POST['cn'];
-		$company= $_POST['company'];
-		$username= $_REQUEST['uname'];
-		$password= $_POST['password'];
-		$type= $_POST['type'];
+		$name=""
+		$cn= ""
+		$company="" 
+		$username="" 
+		$password= ""
+		$type= ""
 
 		  if(empty($_POST['name'])) 
         {

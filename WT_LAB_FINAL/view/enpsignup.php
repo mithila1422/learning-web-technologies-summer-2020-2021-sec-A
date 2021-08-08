@@ -23,30 +23,30 @@
 				<tr>
 					<td>Name</td>
 					<td><input type="text" name="name" id="name"></td>
-					<td></td>
+					<td><?php echo $nameErr; ?></td>
 				</tr>
 
 				<tr>
 					<td>Company Name</td>
 					<td><input type="text" name="company" id="company"></td>
-					<td></td>
+					<td><?php echo $companyErr; ?></td>
 				</tr>
 
 				<tr>
 					<td>Contact no</td>
 					<td><input type="number" name="cn" id="cn"></td>
-					<td></td>
+					<td><?php echo $cnErr; ?></td>
 				</tr>
 
 				<tr>
 					<td>Username</td>
 					<td><input type="text" name="uname" id="uname"></td>
-					<td></td>
+					<td><?php echo $unameErr; ?></td>
 				</tr>
 				<tr>
 					<td>Password</td>
 					<td><input type="password" name="password" id="password"></td>
-					<td></td>
+					<td><?php echo $passwordErr; ?></td>
 				</tr>
 	
 				<tr>
