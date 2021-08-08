@@ -1,8 +1,13 @@
 <?php
+	 $companyErr = $jobTitleErr = $jobLocErr = $salErr = "" ;
 
+      $company = "";
+      $jobTitle = "";
+      $jobLoc = "";
+      $sal = "";
   
       
-      include "../control/empsignupCheck.php"; 
+      include "../control/jobsignupCheck.php"; 
 
 
 ?>
@@ -21,27 +26,27 @@
 			<table>
 
 				<tr>
-					<td>Name</td>
-					<td><input type="text" name="name" id="name"></td>
-					<td></td>
-				</tr>
-
-				<tr>
 					<td>Company Name</td>
 					<td><input type="text" name="company" id="company"></td>
-					<td></td>
+					<td><?php echo $comErr; ?></td>
 				</tr>
 
 				<tr>
-					<td>Contact no</td>
-					<td><input type="number" name="cn" id="cn"></td>
-					<td></td>
+					<td>Job title</td>
+					<td><input type="text" name="jobTitle" id="jobTitle"></td>
+					<td><?php echo $jobTitleErr; ?></td>
 				</tr>
 
 				<tr>
-					<td>Username</td>
-					<td><input type="text" name="uname" id="uname"></td>
-					<td></td>
+					<td>Job Location</td>
+					<td><input type="text" name="jobLoc" id="jobLoc"></td>
+					<td><?php echo $jobLocErr; ?></td>
+				</tr>
+
+				<tr>
+					<td>Salary</td>
+					<td><input type="text" name="sal" id="sal"></td>
+					<td><?php echo $salErr; ?></td>
 				</tr>
 				<tr>
 					<td>Password</td>
